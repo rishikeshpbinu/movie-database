@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="abc.css" media="screen">
+</head>
+<body id="abc">
+
+<div class="topnav">
+  <a class="active" href="home.html">Home</a>
+<a href="#contact">Contact</a>
+   <a href="#contact">Photos</a>
+  <a id="aa" href="login.html">Login</a>
+  <a id="ab" href="signup.html">Sign Up</a>
+</div>
+    <div class="search-container">
+    <form action="/action_page.php">
+        <input type="text" name="search" placeholder="Search by Title, Cast, Genre....">
+           <button type="submit">Search</button>
+    </form>
+  </div>
+    <div class="dropdown">
+        <button class="dropbtn">Movies</button>
+  <div class="dropdown-content">
+    <a href="#">Latest Trailers</a>
+    <a href="#">Upcoming Movies</a>
+    <a href="#">Top Rated Movies</a>
+    <a href="#">Most Popular Movies</a>
+  </div>
+</div>
+ <div class="bg-image"></div>
+<div class="v1">
+    
+         <video  id="myVideo">
+  <source src="Movie.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+     <br>
+  <h1>Avengers: End Game TV Spot</h1>
+  <br>
+  <button id="myBtn" onclick="myFunction()">Play</button>
+
+</div>
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+    
+     
+
+
+
+</body>
+</html>
