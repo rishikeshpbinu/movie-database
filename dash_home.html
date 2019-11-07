@@ -1,0 +1,146 @@
+<html>  
+<style>
+.bg-image4 {
+  
+  background-image: url("dashimg.jpg");
+  height:100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover
+}
+
+.sidebar {
+  float: left;
+  position: absolute;
+  top: 20%;
+  width: 19.8%;
+  height: 80%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.sidebar a {
+  color: #E0DAD9;
+  display: block;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  top: 25%;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: white;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.sidebar a.active{
+  background-color: rgba(0,0,0,0.7);
+}
+
+
+.search{
+  float: right;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+  position:relative;
+  height:20%;
+}
+.search #sch{
+position:relative;
+top:30%;
+left:25%;
+width:60%;
+height:40%;
+ background-color: rgba(0,0,0,0.7);
+color:white;
+border:none;
+}
+
+.search #sbtn{
+ position: absolute;
+ left: 80%;
+ top: 30%;
+ color: white;
+ background-color: rgb(0,0,0,0.3);
+ border: none;
+ height: 40%;
+}
+
+.search #casa{
+ position: absolute;
+ top: 0%;
+ height: 100%;
+ width: 20%;
+}
+.main {
+position:absolute;
+left:30%;
+height: 50%;
+width:50%;
+top:30%;
+ background-color: rgb(0,0,0,0.3);
+
+border-radius:23px;
+}
+.main #ab{
+position:relative;
+left:30%;
+top:20%;
+color:white;
+font-size:20px;
+}
+.button1{position:relative;
+left:10%;
+top:60%;
+width:10%;
+height:10%%;
+background-color:green;
+color:white;
+border:none;
+border-radius:13px;
+;}
+.button1:hover{transform:scale(1.3);}
+</style>
+<body>
+
+ 
+   
+    <div class="bg-image4">
+      
+      <div class="search">
+      <img src="casablanca.png" id="casa"/>	
+      <input type="text" id="sch" name="search" placeholder="   Search by Title, Cast, Genre....">
+           <button id="sbtn" type="submit">Search</button>
+      </div>
+     <div class="main">
+       <form id="ab" action="movie.php" method="post">
+ 
+       Movie Name &nbsp &nbsp &nbsp &nbsp<input type="text" name="mname" required=""/><br><br>
+       Director Name &nbsp &nbsp <input type="text" name="dname" required=""/><br><br>
+       Cast &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" name="cst" required="" /> <br> <br>
+       Cinematographer   &nbsp<input type="text" name="cman" required=""/><br><br>
+       Rating &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" name="rating" required=""/><br><br>     
+	<button class="button1">
+         ADD
+       </button>
+       </form>
+
+  </div>
+      </div>
+ 
+   
+
+    <div class="sidebar">
+    <a href="dash_home.html">Home</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="favourites.html">Favourites</a>
+    <a href="diary.html">Movie Diary</a>
+    <a href="watchlist.html">Watch List</a>
+    </div>
+
+  
+  
+  </body>
+	 
+</html>
